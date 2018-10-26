@@ -1,12 +1,7 @@
 # vscode
 .vscode
 #virtualenv
-
-bin
-include
-lib
-.Python
-pip-selfcheck.json
+env
 
 #Mac
 .DS_Store
