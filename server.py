@@ -9,7 +9,8 @@ CORS(app)
 
 @app.post('/post')
 async def post_handler(request):
-    return response.json({'message': 'Post method!'})
+
+    return response.json({'message': 'Post method you end a jsonStringified post and your name is: {}'.format(request.body)})
 
 @app.get('/get')
 async def get_handler(request):
