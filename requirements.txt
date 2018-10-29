@@ -11,6 +11,8 @@ mccabe==0.6.1
 multidict==4.4.2
 pylint==2.1.1
 sanic==0.8.3
+Sanic-Cors==0.9.6
+Sanic-Plugins-Framework==0.6.3.dev20180717
 six==1.11.0
 typed-ast==1.1.0
 ujson==1.35

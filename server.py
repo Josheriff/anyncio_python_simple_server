@@ -1,7 +1,9 @@
 from sanic import Sanic
 from sanic import response
+from sanic_cors import CORS
 
 app = Sanic(__name__)
+CORS(app)
 
 # app.static("/static", "./static") <- in case we want to serve statics
 
@@ -11,7 +13,7 @@ async def post_handler(request):
 
 @app.get('/get')
 async def get_handler(request):
-    return response.json({'message': 'Post method!'.format(request.args)})
+    return response.json({'message': 'Post method! {}'.format(request.args)})
 
 
 if __name__ == "__main__":
