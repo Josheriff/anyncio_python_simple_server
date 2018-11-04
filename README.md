@@ -1,4 +1,4 @@
-# anyncio_python_simple_server
+# Trying sanic as async server
 
 sanic experiment, in 5 minutes bursts :D
 
