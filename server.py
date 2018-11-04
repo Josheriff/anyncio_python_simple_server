@@ -12,9 +12,13 @@ async def post_handler(request):
 
     return response.json({'message': 'Post method you end a jsonStringified post and your name is: {}'.format(request.body)})
 
+@app.get('/get/<name>')
+async def get_with_param(request, name):
+    return response.text('Get request - {}'.format(name))
+
 @app.get('/get')
 async def get_handler(request):
-    return response.json({'message': 'Post method! {}'.format(request.args)})
+    return response.text('GET request - {}'.format(request.args))
 
 
 if __name__ == "__main__":
